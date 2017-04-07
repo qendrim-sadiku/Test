@@ -94,7 +94,6 @@
 	// var fooModule = require('./foo-module');
 	// var bar = fooModule.foo();
 
-	// require('./modules/map');
 	__webpack_require__(323);
 	__webpack_require__(324);
 	__webpack_require__(325);
@@ -104,8 +103,9 @@
 	__webpack_require__(329);
 	__webpack_require__(330);
 	__webpack_require__(331);
-	__webpack_require__(325);
 	__webpack_require__(332);
+	__webpack_require__(326);
+	__webpack_require__(333);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
@@ -15912,6 +15912,36 @@
 
 /***/ },
 /* 323 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var $ = __webpack_require__(319);
+
+	function init() {
+
+		var map;
+		function initialize() {
+			if (!$('.google-map').size()) return;
+
+			var mapOptions = {
+				zoomControl: false,
+				scaleControl: false,
+				scrollwheel: false,
+				disableDoubleClickZoom: true,
+				zoom: 5,
+				center: new google.maps.LatLng(37, 38)
+			};
+			map = new google.maps.Map($('.google-map').get(0), mapOptions);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	}
+
+	$(init);
+
+/***/ },
+/* 324 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -15924,7 +15954,7 @@
 	});
 
 /***/ },
-/* 324 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15963,7 +15993,7 @@
 	$(init);
 
 /***/ },
-/* 325 */
+/* 326 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16009,7 +16039,7 @@
 	});
 
 /***/ },
-/* 326 */
+/* 327 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16031,7 +16061,7 @@
 	});
 
 /***/ },
-/* 327 */
+/* 328 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16063,7 +16093,7 @@
 	$(init);
 
 /***/ },
-/* 328 */
+/* 329 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16112,7 +16142,7 @@
 	}(jQuery);
 
 /***/ },
-/* 329 */
+/* 330 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16122,7 +16152,7 @@
 	});
 
 /***/ },
-/* 330 */
+/* 331 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16138,7 +16168,7 @@
 	});
 
 /***/ },
-/* 331 */
+/* 332 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16150,7 +16180,7 @@
 	});
 
 /***/ },
-/* 332 */
+/* 333 */
 /***/ function(module, exports) {
 
 	"use strict";
