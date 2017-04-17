@@ -112,8 +112,9 @@
 	__webpack_require__(337);
 	__webpack_require__(338);
 	__webpack_require__(339);
-	__webpack_require__(331);
 	__webpack_require__(340);
+	__webpack_require__(331);
+	__webpack_require__(341);
 
 	// Finally, you can drop test JavaScript here...
 	$(document).ready(function () {
@@ -16685,6 +16686,28 @@
 /* 335 */
 /***/ (function(module, exports) {
 
+	'use strict';
+
+	$(function () {
+	  if ($('.select-options ul li').hasClass('selected')) {
+	    $('.select .input').text($('.select-options li.selected > span:first-child').text());
+	  } else {
+	    $('.select .input').text($('.select-options li:first-child > span:first-child').text());
+	  }
+	  $('.select').click(function () {
+	    $('.select-options').toggleClass('visible');
+	  });
+	  $('.select-options li').click(function () {
+	    $('.selected').removeClass('selected');
+	    $(this).addClass('selected');
+	    $('.select .input').text($(this).find('span:first-child').text());
+	  });
+	});
+
+/***/ }),
+/* 336 */
+/***/ (function(module, exports) {
+
 	"use strict";
 
 	/*  jQuery Nice Select - v1.0
@@ -16731,7 +16754,7 @@
 	}(jQuery);
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16874,7 +16897,7 @@
 	}
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16884,7 +16907,7 @@
 	});
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -16900,7 +16923,7 @@
 	});
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -16912,7 +16935,7 @@
 	});
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports) {
 
 	"use strict";
