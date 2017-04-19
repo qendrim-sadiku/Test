@@ -13692,7 +13692,7 @@
 /* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var require;var require;"use strict";
+	var require;var require;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -16456,7 +16456,7 @@
 	        var fileReader = new FileReader();
 	        fileReader.onload = function (e) {
 	          var file = e.target;
-	          $("<span class=\"pip\">" + "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" + "<br/><span class=\"remove\"></span>" + "</span>").insertAfter("#files");
+	          $("<span class=\"pip\">" + "<img class=\"imageThumb\" id=\"img\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" + "<br/><span class=\"remove\"></span>" + "</span>").insertAfter("#files");
 	          $(".remove").click(function () {
 	            $(this).parent(".pip").remove();
 	          });
@@ -16607,12 +16607,14 @@
 
 	'use strict';
 
-	$('.imageThumb').on('click', function () {
-	  $('#main-product-image').attr('src', $(this).attr('src'));
+	$('.imageThumb ').on('click', function () {
+		var self = this;
+
+		$('#main-product-image').attr('src', $(self).attr('src'));
 	});
 
 	$(".remove").click(function () {
-	  $(this).parent(".pip").remove();
+		$(this).parent(".pip").remove();
 	});
 
 /***/ }),
