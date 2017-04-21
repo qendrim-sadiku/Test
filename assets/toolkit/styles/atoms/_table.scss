@@ -1,0 +1,85 @@
+.table {	
+	table {
+		width: 80%; 
+		thead {
+			tr {
+				td {
+					background:#f2f8fa;
+					color: #7985a1;
+					text-transform: uppercase;
+					
+				}
+			}
+		}
+		td {
+			border-radius:4px;
+			border:2px solid #f2f8fa;
+			background: $white;
+			height: 70px;
+			width: 300px;
+			cursor: pointer;
+			outline: none;
+			padding:15px 5px 15px 5px; 	
+			a {			
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			span {
+				color: #7f98f6;
+				opacity: 1;
+				font-weight: bold;
+			}	
+				
+			
+			.app-div {
+
+				border-radius: 50px;
+				background: rgba(128, 152, 243,0.2);
+				height: 40px;
+				line-height: 40px;
+				font-size: 17px;
+				
+				font-family:$alt-font-family;
+				font-weight: 500;
+				text-align: center;
+				color: #7b86a2;
+				span {
+					text-align: center;
+					 color: rgb(123, 134, 162) !important;
+					 opacity: 1!important;
+					 font-size: 17px;
+				}
+			}	
+		}
+		tr td:first-child {
+			width: 181px;
+	    	padding-left: 10px;
+	    	padding-right: 10px;
+	    	cursor: default ;
+		}
+		@include breakpoint(xs-small only) {
+		  width: 100% !important;			      
+		  margin: 0px;
+		  padding: 0px;
+		}
+		@include breakpoint(small only) {
+		  width: 100%;	     
+	      border:none;
+		}
+		@include breakpoint(medium only) {
+		  max-width: 100%;
+	      margin:auto;
+	      border:none;
+		}			
+	}
+	@include breakpoint(small only) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	@include breakpoint(xs-small only) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+

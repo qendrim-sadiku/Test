@@ -1,0 +1,201 @@
+.dashboard-header {
+	background:$primary;
+	position: relative;
+	.dashboard-info {	
+		padding-top: 28px;		
+		@include grid-row();
+		.header {			
+			padding-bottom: 70px;
+			z-index: 1;
+			border-bottom: solid 1px rgba(255, 255, 255,0.18);						
+			.header-padding {				
+				padding-top:0px;					
+				.logo-section {
+					display: flex;
+					float: left;
+					img {
+						z-index: 1;
+						@include breakpoint(xs-small only) {
+							width: 32px;
+							height: 30px;
+							margin-top: 0px;
+						}
+						@include breakpoint(small only) {
+							width: 32px;
+							height: 30px;
+						}
+					}
+					a {
+						z-index: 1;
+						display: flex;	
+						color: $white !important;		
+						h2 {
+							margin-top: 0px;
+							margin-left: 10px;
+							font-size: 29px;
+							font-weight: 500;
+							font-family: $font-family;
+							@include breakpoint(xs-small only) {
+								font-size: 20px;
+								margin-left: 5px;
+								margin-top: 5px;
+							}
+							@include breakpoint(small only) {
+								font-size: 20px;
+								margin-left: 5px;
+								margin-top: 5px;
+							}
+						}
+					}
+					@include breakpoint (xs-small only) {
+						display: flex;
+
+					}
+					
+				}	
+				.log-out {
+					float: right;
+					color: $white;
+					vertical-align: middle;
+					margin-top: 10px;
+					font-weight: 500;
+					font-size: 16px;	
+					@include breakpoint (xs-small only) {
+						font-size: 16px;
+						margin-top: 9px;					
+					}				
+					@include breakpoint(small only) {
+						font-size: 16px;
+						margin-top: 9px;
+					}
+				}	
+				@include breakpoint (xs-small only) {
+					text-align: center;
+				}
+			}
+			@include breakpoint(xs-small only) {
+				padding-left: 0px;
+				padding-right: 0px;
+				width: 80%;
+				margin: auto;
+			}
+			@include breakpoint(small only) {
+				padding-left: 0px;
+				padding-right: 0px;
+				width: 80%;
+				margin: auto;
+			}
+			@include breakpoint(medium only) {
+				
+				width: 80%;
+				margin: auto;
+			}
+			@include breakpoint(large only) {
+				width: 80%;
+				margin: auto;			
+			}										
+		}
+		.area-and-user {
+			margin-top: 27px;
+			margin-bottom: 26px;
+			display: flex;
+			
+			.user-area-info {
+				position: relative;
+				display: flex;
+				i {
+					color: $white;
+					font-size: 40px;
+					margin-right: 15px;
+				}
+				h4 {
+					font-family: $font-family;
+					font-weight: 500;
+					color: $white;
+					font-size: 16px;
+					margin-top: 12px;
+				}
+				&:after {
+					position: absolute;
+					left: 250px;
+					content: '';
+					height: 48px;
+					width: 2px;
+					background:rgba(255, 255, 255,0.52);	
+					
+					@include breakpoint(xs-small only) {
+						display: none;
+					}
+					@include breakpoint(small only) {
+						display: none;
+					}				
+				}
+				@include breakpoint(xs-small only) {
+					display: flex;
+					margin-bottom: 30px;
+					
+				}
+				@include breakpoint(small only) {
+					margin-left: 0px;
+					margin-bottom: 20px;
+				}
+			}
+			.area-links {
+				margin-left: 100px;
+				margin-top: 12px;
+				a {
+					text-transform: uppercase;					
+					color: $white;
+					font-size: 15px;
+					font-weight: 500;
+					padding-right: 30px;
+				}
+				.cur-anch {
+					opacity: 0.6;
+				}				
+				
+				@include breakpoint(xs-small only) {
+					margin: 0px;
+				}
+				@include breakpoint(small only) {
+					float: none;						
+					margin-left:0px;
+					font-size: 18px;
+				} 	
+			}		
+			@include breakpoint(xs-small only) {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				flex-direction: column; 
+				align-items: center;
+  				justify-content: center;
+				 margin-left: 0px;
+				 margin-right: 0px;		
+			}	
+			@include breakpoint(small only) {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				flex-direction: column; 
+				align-items: center;
+  				justify-content: center;
+				 margin-left: 0px;
+				 margin-right: 0px;				 
+			}
+			@include breakpoint(medium only) {
+				margin: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 80%;
+			}	
+			@include breakpoint(large only) {
+				margin: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 80%;
+
+			}				
+		}		
+	}	
+}

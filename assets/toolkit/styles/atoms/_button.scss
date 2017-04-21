@@ -1,0 +1,32 @@
+.base-button {
+	font-family:$alt-font-family;	
+	font-weight:bold;
+	z-index:100 !important;
+	background:transparent;
+	border:1px solid $white;
+	border-radius:100px;	
+	color:$white;	
+	font-size:18px;
+	text-align:center;
+	@include scut-padding(12px 33px);	
+	float: right;
+	transition:0.5s;
+	position: relative;
+	&:hover {
+		background:$white;
+		border:1px solid $white;
+		color: $black;
+	}
+	@include breakpoint(xs-small only) {		
+		width: 128px;
+   		height: 43px;
+   		font-size: 15px;
+   		line-height: 15px;
+   	}		
+   	@include breakpoint(small only) {
+   		width: 128px;
+   		height: 43px;
+   		font-size: 15px;
+   		line-height: 15px;
+   	}
+}

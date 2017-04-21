@@ -1,0 +1,270 @@
+.calendar-bg {
+  width: 30%;
+  background:#23213e;
+  padding-left: 20px;
+  padding-right: 37px;
+  padding-top: 92px;
+  .ui-datepicker { 
+  
+  .ui-datepicker-header {
+    position: relative; 
+
+    color: #6b7897;     
+    width: 96%;   
+    @include breakpoint(xs-small only) {
+      width: 97%;
+    }   
+    @include breakpoint(small only) {
+      width: 92%;
+    }
+    @include breakpoint(medium only) {
+      width: 90%;
+    }
+    @include breakpoint(desktop only) {
+      width: 94%;
+    }
+    @include breakpoint(xxlarge only) {
+      width: 94%;
+    }
+    @include breakpoint(macbook only) {
+      width: 91%;
+    }
+    @include breakpoint(Imac only) {
+      width: 91%;
+    }
+  }
+  .ui-datepicker-prev, .ui-datepicker-next {
+    position: absolute;
+    bottom: 20px;
+    float: right;      
+    width: 1.8em;
+    clear: both;
+    height: 1.8em;
+    color: $white;                           
+    width: 1.8em;
+    height: 1.8em;      
+    &:before{
+      background:$primary;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
+    }
+    &.ui-state-disabled {
+      cursor: default;          
+    }
+    @include breakpoint(xs-small only) {
+      padding-right: 35px;
+      width: 2.8em;
+      height: 2.8em; 
+    }
+    @include breakpoint(small only) {
+      padding-right: 0px;
+      
+      height: 2.8em;
+    }
+  }
+  .ui-datepicker-prev:before {
+      content: "\f053";
+      line-height: 25px;
+      padding-left: 7px;
+      height: 25px;
+      width: 25px;
+      border-radius:50px;
+    }
+    .ui-datepicker-next:before {
+      content: "\f054";            
+      line-height: 25px;
+      padding-left: 9px;
+      height: 25px;
+      width: 25px;
+      border-radius:50px;
+    }  
+    .ui-datepicker-prev {
+      position: absolute;
+      right: 40px;
+      @include breakpoint(xs-small only) {
+        float: right;
+        right: 50px;
+        padding-right: 0px;  
+      }
+    }
+    .ui-datepicker-next {
+      position: absolute;
+      right: 0px;
+      @include breakpoint(xs-small only) {
+        float: right;
+        padding-left: 0px; 
+      }
+    }
+    .ui-datepicker-prev span, .ui-datepicker-next span {
+      display: none;       
+    }
+    .ui-datepicker-title {   
+      position: absolute;
+      left: 14px;       
+      margin-top: -35px;
+      font-size: 15px;
+      font-family: $font-family;
+      font-family: 500;
+      line-height: 1.8em;
+      span {
+        margin-top: 0px;
+
+        
+      }
+      @include breakpoint(xs-small only) {
+        left: 0px;
+        width: 100%;
+      }
+      @include breakpoint(small only) {
+        left: 4px;
+        width: 100%;
+      }
+      @include breakpoint(desktop only) {
+        left: 19px;
+      }
+      select {
+        font-size: 1em;
+        margin: 1px 0;
+      }
+    }     
+    table {
+      padding: 0px;
+     
+      font-size: .9em;
+      border-collapse: separate;
+      @include breakpoint(xs-small only) {
+        border:transparent;
+      }
+    }      
+    th {   
+      font-weight: bold;      
+      text-align: center;   
+      border: 0;
+      color: #7f98f6;
+      font-size: 15px;
+      background:#23213e;
+      @include breakpoint(xs-small only) {
+        text-align: left;
+        padding-left: 5px;
+      }
+      @include breakpoint(small only) {
+        text-align: left;
+        padding-left:5px;
+      }
+      @include breakpoint(medium only) {
+        text-align: left;
+        padding-left:15px;
+      }
+      @include breakpoint(macbook only) {
+        text-align: left;
+        padding-left: 15px;
+      }   
+      @include breakpoint(Imac only) {
+        text-align: left;
+        padding-left: 15px;
+      }
+    }
+    td {    
+      background:#23213e;                   
+      span, a {
+        background:$primary;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #7c86a2;
+        line-height: 30px;
+        border-radius:50px;
+        background: transparent;
+        width:30px;
+        font-size: 13.5px;
+       @include breakpoint(desktop only) {
+        text-align: center;
+        padding-left: 0px;         
+      }
+      @include breakpoint(medium only) {
+        text-align: center;
+      }
+    }
+    a:hover {
+      border:none;
+      background:$primary;
+      border-radius:50px;
+      color: $white;  
+    }
+    &.ui-datepicker-other-month a {
+      color: $white !important;
+    }
+    &.ui-datepicker-current-day a {
+      background: $primary;
+      color: $white;
+      border-radius:50px;
+    }
+    &.ui-datepicker-unselectable span {
+      
+    }
+    @include breakpoint(xs-small only) {
+      padding: 0px;
+      text-align: center;
+    } 
+    @include breakpoint(small only) {
+      padding: 0px;
+      text-align: left;
+    } 
+    @include breakpoint(desktop only) {        
+      padding-left: 15px;
+    }
+  }      
+}
+label {
+    color: $primary !important;    
+    padding-left: 15px;
+    @include breakpoint(xs-small only) {
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }
+    @include breakpoint(small only) {
+      padding-left: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  input {
+    padding-left:15px;
+    color: $white;     
+    background:transparent;
+    border:none; 
+    @include breakpoint(xs-small only) {
+      padding-left: 5px;
+      padding-bottom: 20px;
+    }
+    @include breakpoint(small only) {
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }  
+  }  
+  @include breakpoint(xs-small only) {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px; 
+    display: none;
+  }
+  @include breakpoint(small only) {
+    width: 100%;
+    display: none;
+  }
+  @include breakpoint(medium only) {
+    width: 100%;
+    display: none;
+  }
+  @include breakpoint(large only) {
+    width: 40%;
+  }
+  @include breakpoint(macbook only) {
+    padding-bottom: 26.5%;
+  }
+}
+
