@@ -116,7 +116,7 @@
 			<div class="header-padding">		
 				<div class="logo-section">
 					<a href="home.html">		
-						<img src="assets/toolkit/images/soccer.svg" class="logo">
+						<img src="../assets/toolkit/images/soccer.svg" class="logo">
 						<h2>Terminet</h2>
 					</a>
 				</div>
@@ -155,13 +155,13 @@
 		<div class="home-forms">
 			<select class="wide" id="test">
 				<option>Lokacioni?</option>
-				<option  value="1">Prishtine</option>
+				<option  value="1">Prishtine</option>	
 				<option  value="2">Mitrovic</option>
 				<option  value="3" 	>Pej</option>
 				<option  value="4">Vushtri</option>
 				<option  value="5">Gjilan</option>
 			</select>			<select class="day" id="test">
-				 <option selected >DIta</option>
+				<option selected >DIta</option>
 				<option  value="1">E Hënë</option>
 				<option  value="2">E Martë</option>
 				<option  value="3" 	>E Martë</option>
@@ -176,13 +176,49 @@
 				<option  value="2">19:00</option>
 				<option  value="3">19:00</option>
 				<option  value="4">19:00</option>
-			</select>			<a href="result.html" class="open-search ">Search</a>		</div>
-	</div>
+			</select>			<input type="button" class="open-search" onclick="location.href='result.html';" />		</div>
+		<div class="modal-s" data-open="exampleModal3">
+		<form method="get" action="/search" id="search" >
+		  <input name="q" type="text"  placeholder="Lokacioni" class="first-input-modal" />
+		  <input name="q" type="text"  placeholder="Dita" class="second-input-modal" />
+		  <input name="q" type="text"  placeholder="Ora"/ class="third-input-modal">
+		</form>
+		</div>
+		<!-- This is the first modal -->
+		<div class="search-modal reveal" id="exampleModal3" data-reveal>
+		       <button class="close-button" data-close aria-label="Close reveal" type="button">
+		        <span aria-hidden="true">&times;</span>
+		      </button> 
+		      <h2>Kerko Termine</h2>
+		      <select class="wide" id="test">
+		      	<option>Lokacioni?</option>
+		      	<option  value="1">Prishtine</option>	
+		      	<option  value="2">Mitrovic</option>
+		      	<option  value="3" 	>Pej</option>
+		      	<option  value="4">Vushtri</option>
+		      	<option  value="5">Gjilan</option>
+		      </select>      <select class="day" id="test">
+		      	<option selected >DIta</option>
+		      	<option  value="1">E Hënë</option>
+		      	<option  value="2">E Martë</option>
+		      	<option  value="3" 	>E Martë</option>
+		      	<option  value="4">E Mërkure</option>
+		      	<option  value="4">E Enjte</option>
+		      	<option  value="4">E Premte</option>
+		      	<option  value="4">E Shtun</option>
+		      	<option  value="4">E Diel</option>
+		      </select>      <select class="hours" id="test">
+		      	 <option selected >Ora</option>
+		      	<option  value="1">19:00</option>
+		      	<option  value="2">19:00</option>
+		      	<option  value="3">19:00</option>
+		      	<option  value="4">19:00</option>
+		      </select>      <input type="button" class="open-search" onclick="location.href='pages/result.html';" /></div>	</div>
 	<div id="integration-list" class="bounce">
 	    <ul>
 	        <li>            
 		        <div class="expand">
-		    		 <a href="show-page.html" class="place-img">
+		    		 <a href="../pages/show-page.html" class="place-img">
 		     			<img src="http://placehold.it/220x150">
 		     		</a>        
 		            <div class="location-and-text">	                  
@@ -193,7 +229,7 @@
 								<p><a href="show-page.html">Rr. Agim Ramadani, Prishtinë</a></p>
 		               		</div>               			               			
 							<div class="user-info-div">
-								<img src="assets/toolkit/images/user-info.svg" alt="" class="user-info-svg">
+								<img src="../assets/toolkit/images/user-info.svg" alt="" class="user-info-svg">
 								<span>Aktiv para 12 min</span>	               				
 							</div>
 		            	</div>
@@ -212,32 +248,32 @@
 		               	<div class="collapse-info-stuf">
 							<div class="each-stuf">
 								<div class="const">	
-									<img src="assets/toolkit/images/cost.svg">
+									<img src="../assets/toolkit/images/cost.svg">
 									<span>25 Euro/nata</span>							
 								</div>	
 							</div>
 							<div class="each-stuf">
 								<div class="gloves">	
-									<img src="assets/toolkit/images/dorezat.svg">
+									<img src="../assets/toolkit/images/dorezat.svg">
 									<span class="dorzat">Dorezat</span>			
 								</div>	
 							</div>
 							<div class="each-stuf ">
 								<div class="bus">	
-									<img src="assets/toolkit/images/transporti.svg" class="buss-img">
+									<img src="../assets/toolkit/images/transporti.svg" class="buss-img">
 									<span class="trans">Tranport</span>			
 								</div>	
 							</div>
 						</div>
 						<div class="free-res">
 							<div class="res-txt">							
-								<img src="assets/toolkit/images/clock.svg" alt="">
+								<img src="../assets/toolkit/images/clock.svg" alt="">
 								<span class="clock-txt">Të Lira:</span>
 							</div>
 							<div class="free-res-button">
 								<a href="#" class="res-button">Ora: 18:00</a>
 								<a href="#" class="res-button">Ora: 19:00</a>
-								<a href="show-page.html" class="res-button">More....</a>
+								<a href="../pages/show-page.html" class="res-button">More....</a>
 							</div>
 						</div>
 	               	</div>              
@@ -245,23 +281,23 @@
 	        </li>  
 	  		<li>            
 		        <div class="expand">
-		    		 <a href="show-page.html" class="place-img">
+		    		 <a href="../pages/show-page.html" class="place-img">
 		     			<img src="http://placehold.it/220x150">
 		     		</a>        
 		             <div class="location-and-text">	                  
 		               <div class="location-info-txt">
-		               		<h4><a href="show-page.html">Prince Sport Center</a></h4>		
+		               		<h4><a href="../pages/show-page.html">Prince Sport Center</a></h4>		
 		               		<div class="road-info-div">	               			
-								<img src="assets/toolkit/images/mark.svg" >
-								<p><a href="show-page.html">Rr. Agim Ramadani, Prishtinë</a></p>
+								<img src="../assets/toolkit/images/mark.svg" >
+								<p><a href="../pages/show-page.html">Rr. Agim Ramadani, Prishtinë</a></p>
 		               		</div>               			               			
 							<div class="user-info-div">
-								<img src="assets/toolkit/images/user-info.svg" alt="" class="user-info-svg">
+								<img src="../assets/toolkit/images/user-info.svg" alt="" class="user-info-svg">
 								<span>Aktiv para 12 min</span>	               				
 							</div>
 		            	</div>
 		                <div class="call-info-txt">
-		                	<p class="info-p"><img src="assets/toolkit/images/group.svg" >E lirë</p>
+		                	<p class="info-p"><img src="../assets/toolkit/images/group.svg" >E lirë</p>
 		                	<span class="phone-number"><i class="fa fa-phone" aria-hidden="true"></i>    044-123-456</span>  
 		                </div>	
 		            </div>
@@ -275,32 +311,32 @@
 		               	<div class="collapse-info-stuf">
 							<div class="each-stuf">
 								<div class="const">	
-									<img src="assets/toolkit/images/cost.svg">
+									<img src="../assets/toolkit/images/cost.svg">
 									<span>25 Euro/nata</span>							
 								</div>	
 							</div>
 							<div class="each-stuf">
 								<div class="gloves">	
-									<img src="assets/toolkit/images/dorezat.svg">
+									<img src="../assets/toolkit/images/dorezat.svg">
 									<span class="dorzat">Dorezat</span>			
 								</div>	
 							</div>
 							<div class="each-stuf ">
 								<div class="bus">	
-									<img src="assets/toolkit/images/transporti.svg" class="buss-img">
+									<img src="../assets/toolkit/images/transporti.svg" class="buss-img">
 									<span class="trans">Tranport</span>			
 								</div>	
 							</div>
 						</div>
 						<div class="free-res">
 							<div class="res-txt">							
-								<img src="assets/toolkit/images/clock.svg" alt="">
+								<img src="../assets/toolkit/images/clock.svg" alt="">
 								<span class="clock-txt">Të Lira:</span>
 							</div>
 							<div class="free-res-button">
 								<a href="#" class="res-button">Ora: 18:00</a>
 								<a href="#" class="res-button">Ora: 18:00</a>
-								<a href="show-page.html" class="res-button">More....</a>
+								<a href="../pages/show-page.html" class="res-button">More....</a>
 							</div>
 						</div>
 	               	</div>              
@@ -308,23 +344,23 @@
 	        </li> 
 	        <li>            
 		        <div class="expand">
-		    		 <a href="show-page.html" class="place-img">
+		    		 <a href="../pages/show-page.html" class="place-img">
 		     			<img src="http://placehold.it/220x150">
 		     		</a>        
 		              <div class="location-and-text">	                  
 		               <div class="location-info-txt">
-		               		<h4><a href="show-page.html">Prince Sport Center</a></h4>		
+		               		<h4><a href="../pages/show-page.html">Prince Sport Center</a></h4>		
 		               		<div class="road-info-div">	               			
-								<img src=".sssets/toolkit/images/mark.svg" >
-								<p><a href="show-page.html">Rr. Agim Ramadani, Prishtinë</a></p>
+								<img src="../assets/toolkit/images/mark.svg" >
+								<p><a href="../pages/show-page.html">Rr. Agim Ramadani, Prishtinë</a></p>
 		               		</div>               			               			
 							<div class="user-info-div">
-								<img src="assets/toolkit/images/user-info.svg" alt="" class="user-info-svg">
+								<img src="../assets/toolkit/images/user-info.svg" alt="" class="user-info-svg">
 								<span>Aktiv para 12 min</span>	               				
 							</div>
 		            	</div>
 		                <div class="call-info-txt">
-		                	<p class="info-p"><img src="assets/toolkit/images/group.svg" >E lirë</p>
+		                	<p class="info-p"><img src="../assets/toolkit/images/group.svg" >E lirë</p>
 		                	<span class="phone-number"><i class="fa fa-phone" aria-hidden="true"></i>    044-123-456</span>  
 		                </div>	
 		            </div>
@@ -357,13 +393,13 @@
 						</div>
 						<div class="free-res">
 							<div class="res-txt">							
-								<img src="assets/toolkit/images/clock.svg" alt="">
+								<img src="../assets/toolkit/images/clock.svg" alt="">
 								<span class="clock-txt">Të Lira:</span>
 							</div>
 							<div class="free-res-button">
 								<a href="#" class="res-button">Ora: 18:00</a>
 								<a href="#" class="res-button">Ora: 18:00</a>
-								<a href="show-page.html" class="res-button">More....</a>
+								<a href="pages/show-page.html" class="res-button">More....</a>
 							</div>
 						</div>
 	               	</div>              

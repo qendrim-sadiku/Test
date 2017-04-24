@@ -116,7 +116,7 @@
 		<header class="transparent-header">
 			<div class="header-padding">		
 				<div class="logo-section">	
-					<a href="index.html">	
+					<a href="home.html">	
 						<img src="assets/toolkit/images/soccer.svg" class="logo">
 						<h2>Terminet</h2>
 					</a>
@@ -165,7 +165,7 @@
 				<option  value="4">Vushtri</option>
 				<option  value="5">Gjilan</option>
 			</select>			<select class="day" id="test">
-				 <option selected >DIta</option>
+				<option selected >DIta</option>
 				<option  value="1">E Hënë</option>
 				<option  value="2">E Martë</option>
 				<option  value="3" 	>E Martë</option>
@@ -180,10 +180,14 @@
 				<option  value="2">19:00</option>
 				<option  value="3">19:00</option>
 				<option  value="4">19:00</option>
-			</select>			<a href="../pages/result.html" class="open-search "></a>		</div>
+			</select>			<input type="button" class="open-search" onclick="location.href='../pages/result.html';" />		</div>
+			<div class="modal-s" data-open="exampleModal3">
 			<form method="get" action="/search" id="search" >
-			  <input name="q" type="text" size="40" placeholder="Search" class="search-modal" data-open="exampleModal3"/>
+			  <input name="q" type="text"  placeholder="Lokacioni" class="first-input-modal" />
+			  <input name="q" type="text"  placeholder="Dita" class="second-input-modal" />
+			  <input name="q" type="text"  placeholder="Ora"/ class="third-input-modal">
 			</form>
+			</div>
 			<!-- This is the first modal -->
 			<div class="search-modal reveal" id="exampleModal3" data-reveal>
 			       <button class="close-button" data-close aria-label="Close reveal" type="button">
@@ -198,7 +202,7 @@
 			      	<option  value="4">Vushtri</option>
 			      	<option  value="5">Gjilan</option>
 			      </select>      <select class="day" id="test">
-			      	 <option selected >DIta</option>
+			      	<option selected >DIta</option>
 			      	<option  value="1">E Hënë</option>
 			      	<option  value="2">E Martë</option>
 			      	<option  value="3" 	>E Martë</option>
@@ -213,8 +217,7 @@
 			      	<option  value="2">19:00</option>
 			      	<option  value="3">19:00</option>
 			      	<option  value="4">19:00</option>
-			      </select>     <input type="button" class="open-search" onclick="location.href='../pages/result.html';" />
-</div>	</div>	
+			      </select>      <input type="button" class="open-search" onclick="location.href='../pages/result.html';" /></div>	</div>	
 </div>
 
   
