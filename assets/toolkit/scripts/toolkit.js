@@ -16806,12 +16806,13 @@
 	          $(function () {
 	            $(".remove").click(function () {
 	              swal({
-	                title: "A Je I Sigurt",
-	                text: "Nuk Do Jeni Ne Gjendje Ta Ktheni Kete Fotografi  ",
+	                title: "Fshijë foton?",
+	                text: "  A jeni i sigurt qe deshironi te fshini kete foto?  Kujdes! Ky veprim nuk mund te kthehet mrapa.   ",
 	                type: "warning",
 	                showCancelButton: true,
 	                confirmButtonColor: "#DD6B55",
-	                confirmButtonText: "Po, Hiqe",
+	                confirmButtonText: "Po, fshije kete foton",
+	                cancelButtonText: "Anuloje",
 	                closeOnConfirm: true
 	              }, function (isConfirmed) {
 	                if (isConfirmed) {
